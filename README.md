@@ -1,2 +1,2 @@
 # Simple Calculator
-                  -Sravani Mamidi
+                  -Krishna Sravani Mamidi
