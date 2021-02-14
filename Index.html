@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" href="fullcalstyle.css">
+<title>Simple Calculator Project</title>
+<script>
+function display(data)
+{
+document.getElementById('final_output').value+=data;
+}
+function solve()
+{
+var expr=document.getElementById("final_output").value;
+var sol=eval(expr);
+document.getElementById('final_output').value=sol;
+}
+function delet()
+{
+ value = document.getElementById('final_output').value;
+  document.getElementById('final_output').value = value.substr(0, value.length - 1);
+}
+function clea()
+{
+value = document.getElementById('final_output').value;
+  document.getElementById('final_output').value ='';
+}
+</script>
+</head>
+<body>
+  <div class="calpos">
+    <div class="design">
+<input type="text" class="displaydesign" id="final_output"><br>
+<button type="button" class="buttondesign" onclick="delet()">del</button>
+<button type="button " class="buttondesign" onclick="clea()">c</button>
+<button type="button" class="buttondesign" onclick="display('/')">/</button>
+<button type="button" class="buttondesign" >on</button><br>
+<button type="button" class="buttondesign" onclick="display('7')">7</button>
+<button type="button" class="buttondesign" onclick="display('8')">8</button>
+<button type="button" class="buttondesign" onclick="display('9')">9</button>
+<button type="button" class="buttondesign" onclick="display('+')">+</button><br>
+<button type="button" class="buttondesign" onclick="display('4')">4</button>
+<button type="button" class="buttondesign" onclick="display('5')">5</button>
+<button type="button" class="buttondesign" onclick="display('6')">6</button>
+<button type="button" class="buttondesign" onclick="display('-')">-</button><br>
+<button type="button" class="buttondesign" onclick="display('1')">1</button>
+<button type="button" class="buttondesign" onclick="display('2')">2</button>
+<button type="button" class="buttondesign" onclick="display('3')">3</button>
+<button type="button" class="buttondesign" onclick="display('*')">*</button><br>
+<button type="button" class="buttondesign" onclick="display('.')">.</button>
+<button type="button" class="buttondesign" onclick="display('0')">0</button>
+<button type="button" class="buttondesign" onclick="display('00')">00</button>
+<button type="button" class="buttondesign" onclick="solve()">=</button>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image:url("calback.jpg");
+background-size: cover;
+}
+.design{
+	height:420px;
+	width:300px;
+	background-color:skyblue;
+	border-radius:20px;
+
+}
+.buttondesign{
+	height:50px;
+	width:50px;
+	background:black;
+	border-radius:50%;
+	font-size:30px;
+	font-weight:700;
+	border:none;
+	color:#FFD700;
+	cursor:pointer;
+	margin:11px 5px 0px 10px;
+}
+.displaydesign{
+	height:100px;
+	width:300px;
+	background-color:orange;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	font-size:30px;
+    text-align:right;
+}
+button:hover{
+	
+	background:white;
+	
+}
+.calpos{
+	 position: absolute;
+  top: 150px;
+  right:550px;
+}
