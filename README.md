@@ -1,1 +1,2 @@
-# WebProject
+# Simple Calculator
+                  -Sravani Mamidi
